@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blacksmithing Co. — Tiered Gear Picks</title>
+  <meta name="description" content="Blacksmithing Co. gear recommendations for beginner, intermediate, and veteran blacksmiths." />
+
+
+
+  <style>
+    :root{
+      --bg:#0f0f11;          /* coal black */
+      --bg-elev:#15161a;     /* dark steel */
+      --text:#e6e6e6;        /* light ash */
+      --muted:#b6b6b6;       /* soft grey */
+      --accent:#d97706;      /* warm bronze */
+      --accent-2:#ef4444;    /* forge red */
+      --ring:#6b7280;        /* slate */
+      --success:#10b981;     /* green */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin-inline:auto}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(15,15,17,.77);backdrop-filter:blur(8px);border-bottom:1px solid #222}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:28px;height:28px;border-radius:8px;background:conic-gradient(from 45deg,var(--accent),var(--accent-2));box-shadow:0 0 16px rgba(239,68,68,.25)}
+    .brand h1{font-size:18px;margin:0}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border:1px solid #2a2a2f;border-radius:12px;background:linear-gradient(180deg,#1a1b1f,#14151a);color:var(--text);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+    .btn:hover{border-color:#3a3a41}
+    .btn.accent{border-color:transparent;background:linear-gradient(180deg,#f59e0b,#d97706);color:#111;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:52px 0}
+    .card{background:radial-gradient(1200px 400px at 10% -10%,rgba(239,68,68,.08),transparent),linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.0));border:1px solid #23242a;border-radius:18px;padding:22px}
+    .eyebrow{font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+    .headline{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:6px 0 12px}
+    .sub{color:#cfcfcf;margin:0 0 18px}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+
+    /* Sections */
+    section{padding:36px 0}
+    h2{font-size:clamp(22px,3vw,30px);margin:0 0 14px}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+
+    /* Cards */
+    .item{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.0));border:1px solid #23242a;border-radius:16px;overflow:hidden}
+    .item .body{padding:14px 16px}
+    .meta{color:var(--muted);font-size:12px}
+    .price{font-weight:700}
+
+    /* Footer */
+    footer{border-top:1px solid #222;padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* Disclosure banner */
+    .disclosure{position:fixed;bottom:16px;right:16px;left:16px;z-index:40;display:flex;gap:12px;align-items:flex-start;justify-content:space-between;background:#121318;border:1px solid #23242a;border-radius:14px;padding:14px;box-shadow:0 8px 30px rgba(0,0,0,.45)}
+    .disclosure p{margin:0;color:#d7d7d7;font-size:13px}
+    .disclosure .btn{white-space:nowrap}
+    .hide{display:none}
+
+    /* Utility */
+    .badge{display:inline-block;padding:.2rem .5rem;border:1px solid #2b2c32;border-radius:999px;font-size:12px;color:#d1d5db}
+    .kicker{display:flex;gap:8px;align-items:center}
+    .kicker i{width:7px;height:7px;border-radius:999px;background:var(--accent-2);box-shadow:0 0 10px rgba(239,68,68,.7)}
+    .muted{color:var(--muted)}
+  </style>
+
+
+</head>
+<body>
+ </head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"> <img src="blacksmithing co. logo coal blakc.png" alt="Email" class="contact-icon"></div>
+        <h1>Blacksmithing Co.</h1>
+      </div>
+      <nav aria-label="Primary">
+      </nav>
+      <a class="btn accent" href="V1 Blacksmithing Co..html">Back to Home Page</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="kicker"><i></i><span class="eyebrow">Tier Levels</span></div>
+      <h1>Tiered Recommendations</h1>
+      <p class="sub">Every blacksmith starts somewhere. That’s why we’ve built gear tiers that are tailored just for you:</p>
+      <ul>
+        <li><strong>Beginner Tier</strong> — Affordable, reliable tools to help you land your very first hammer strike.</li>
+        <li><strong>Intermediate Tier</strong> — Durable gear to expand your skills and outfit a dependable home forge.</li>
+        <li><strong>Expert Tier</strong> — Premium, professional-grade tools trusted by seasoned smiths.</li>
+      </ul>
+      <p class="sub">No matter where you are on your journey,
+         Blacksmithing Co. makes this timeless craft accessible to everyone with hand-picked Amazon products, backed by research and trusted reviews.</p>
+      <p class="sub"><em>As an Amazon Associate, we may earn from qualifying purchases.</em></p>
+    </section>
+
+    <!-- Beginner Tier -->
+    <section class="tier" id="beginner">
+      <h2>Beginner</h2>
+      <p>Affordable, simple tools to get your first forge running.</p>
+      <div class="grid cols-3">
+        <!-- Example card -->
+        <article class="item">
+          <img src="https://images.unsplash.com/photo-1610388092140-6f71fb904f16?q=80&w=800" alt="image not found" />
+          <div class="body">
+            <h4>W.I.P.</h4>
+            <div class="price">$00–$00</div>
+            <p class="meta">Coming soon!</p>
+            <a class="btn accent" href="https://www.amazon.com/dp/ASIN-HAMMER" target="_blank" rel="sponsored noopener">View on Amazon</a>
+          </div>
+        </article>
+        <!-- Add more beginner picks -->
+
+         <!-- Example card -->
+         <article class="item">
+          <img src="https://images.unsplash.com/photo-1610388092140-6f71fb904f16?q=80&w=800" alt="image not found" />
+          <div class="body">
+            <h4>W.I.P.</h4>
+            <div class="price">$00–$00</div>
+            <p class="meta">Coming soon!</p>
+            <a class="btn accent" href="https://www.amazon.com/dp/ASIN-HAMMER" target="_blank" rel="sponsored noopener">View on Amazon</a>
+          </div>
+        </article>
+        <!-- Add more beginner picks -->
+
+         <!-- Example card -->
+         <article class="item">
+          <img src="https://images.unsplash.com/photo-1610388092140-6f71fb904f16?q=80&w=800" alt="image not found" />
+          <div class="body">
+            <h4>W.I.P.</h4>
+            <div class="price">$00–$00</div>
+            <p class="meta">Coming soon!</p>
+            <a class="btn accent" href="https://www.amazon.com/dp/ASIN-HAMMER" target="_blank" rel="sponsored noopener">View on Amazon</a>
+          </div>
+        </article>
+        <!-- Add more beginner picks -->
+         
+      </div>
+    </section>
+
+    <!-- Intermediate Tier -->
+    <section class="tier" id="intermediate">
+      <h2>Intermediate</h2>
+      <p>Step up your tools for bigger stock and more versatile projects.</p>
+      <div class="grid cols-3">
+        <article class="item">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800" alt="Two-Burner Forge" />
+          <div class="body">
+            <h4>W.I.P.</h4>
+            <div class="price">$00–$00</div>
+            <p class="meta">Coming Soon!</p>
+            <a class="btn accent" href="https://www.amazon.com/dp/ASIN-FORGE" target="_blank" rel="sponsored noopener">View on Amazon</a>
+          </div>
+        </article>
+        <!-- Add more intermediate picks -->
+      </div>
+    </section>
+
+    <!-- Expert Tier -->
+    <section class="tier" id="Expert">
+      <h2>Expert</h2>
+      <p>Pro-level tools built for speed, efficiency, and long-term use.</p>
+      <div class="grid cols-3">
+        <article class="item">
+          <img src="https://images.unsplash.com/photo-1590420486510-d1cc4f6236e5?q=80&w=800" alt="image not found" />
+          <div class="body">
+            <h4>W.I.P.</h4>
+            <div class="price">$00–$00</div>
+            <p class="meta">Coming Soon!</p>
+            <a class="btn accent" href="https://www.amazon.com/dp/ASIN-ANVIL" target="_blank" rel="sponsored noopener">View on Amazon</a>
+          </div>
+        </article>
+        <!-- Add more Expert picks -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Affiliate Disclosure:</strong> As an Amazon Associate we earn from qualifying purchases.</p>
+      <p>© <span id="year"></span> Blacksmithing Co. • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
